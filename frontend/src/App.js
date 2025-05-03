@@ -1,16 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container } from 'react-bootstrap';
+import Header from './components/Header'
+import Footer from './components/Footer'
+import HomeScreen from './screens/homeScreen'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+      <Header />
+      <main className='py-3'>
+        <Container>
+           <HomeScreen/>
+        </Container>
        
-      </header>
+      </main>
+      <Footer />
     </div>
   );
 }
